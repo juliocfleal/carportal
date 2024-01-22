@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude
-public class OwenerPostDTO {
+public class OwnerPostDTO {
 	
 	private String name;
 	private String type;
