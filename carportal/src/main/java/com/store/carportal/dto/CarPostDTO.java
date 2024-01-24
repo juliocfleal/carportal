@@ -1,4 +1,4 @@
-package com.carportal.api.dto;
+package com.store.carportal.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

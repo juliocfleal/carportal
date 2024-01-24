@@ -1,4 +1,4 @@
-package com.carportal.api.controller;
+package com.store.carportal.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.carportal.api.dto.OwnerPostDTO;
-import com.carportal.api.service.OwnerPostService;
+import com.store.carportal.dto.OwnerPostDTO;
+import com.store.carportal.service.OwnerPostService;
 
 @RestController
-@RequestMapping("/owner")
+@RequestMapping("/user")
 public class OwnerPostController {
 
 	@Autowired
 	private OwnerPostService ownerPostService;
 	
 	@PostMapping
-	public ResponseEntity createOwnerCar(@RequestBody OwnerPostDTO ownerPostDTO) {
-		ownerPostService.createOwnerCar(ownerPostDTO);
+	public ResponseEntity createOwner(@RequestBody OwnerPostDTO ownerPostDTO) {
+		ownerPostService.createOwnerPost(ownerPostDTO);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 }
