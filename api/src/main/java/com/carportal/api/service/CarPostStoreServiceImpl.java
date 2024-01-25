@@ -9,7 +9,7 @@ import com.carportal.api.client.CarPostStoreClient;
 import com.carportal.api.dto.CarPostDTO;
 
 @Service
-public class CarPostServiceImpl implements CarPostStoreService{
+public class CarPostStoreServiceImpl implements CarPostStoreService{
 	
 	@Autowired
 	private CarPostStoreClient carPostStoreClient;
